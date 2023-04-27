@@ -1,0 +1,53 @@
+/* Here, add animation for the buttons for resume, home, hobbies, projects */
+#guide ul li a::before, #guide ul li a::after {
+  z-index: 0;
+  transition: 0.35s; 
+} 
+
+#guide ul li a::before { 
+  position: absolute;
+  top: 0%; 
+  left: 0%;
+  content: "";
+  width: 20%; 
+  height: 40%; 
+  border-left: 2px solid rgb(140, 140, 140); 
+  border-top: 2px solid rgb(140, 140, 140); 
+  background: transparent;
+} 
+
+#guide ul li a::after {
+  position: absolute;
+  bottom: 0; 
+  right: 0; 
+  content: "";
+  width: 20%; 
+  height: 40%; 
+  border-right: 2px solid rgb(140, 140, 140); 
+  border-bottom: 2px solid rgb(140, 140, 140); 
+  background: transparent;
+}
+
+#guide ul li a:hover::before { 
+  position: absolute;
+  background: transparent;
+  top: 0%; 
+  left: 0%;
+  content: "";
+  border-left: 2px solid rgb(0, 0, 0); 
+  border-top: 2px solid rgb(0, 0, 0);
+  width: 98%; 
+  height: 93%; 
+} 
+
+#guide ul li a:hover::after  {
+  position: absolute;
+  background: transparent;
+  bottom: 0%; 
+  right: 0%; 
+  content: "";
+  border-right: 2px solid rgb(0, 0, 0); 
+  border-bottom: 2px solid rgb(0, 0, 0);
+  width: 98%; 
+  height: 93%;
+}

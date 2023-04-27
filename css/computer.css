@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  /* this takes care of all the resetting */
+  font-family: 'Open Sans', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.caption {
+  position: absolute;
+  top:10px; 
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.3); 
+  opacity: 0; 
+  transition: all 0.6s ease-in-out; 
+  z-index:10; 
+  align-items: center;
+  text-decoration: none; 
+}
+
+.caption p {
+  text-align: center; 
+  line-height: 180%; 
+  font-size: 1.5rem;
+  padding-top: 17.5%;
+  font-family: 'Lato', sans-serif; 
+  font-weight: lighter;
+  color: white;
+}
+
+.picup {
+  position: relative;
+}
+   
+.picup:hover .caption {
+  opacity: 1; 
+  transform: translateY(-10px);  
+}
+
+#guide {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 20%;
+  padding: 0%;
+  height: 100%;
+  border-right: 2px solid rgb(140, 140, 140);
+}
+
+#social {
+  position: absolute;
+  line-height: 150%;
+  font-size: 230%;
+  width: 75%;
+  align-items: center;
+  margin: 10% 0% 10% 14%;
+  bottom: 0%;
+}
+
+.bi {
+  line-height: 150%;
+  color: rgb(50, 50, 50);
+  margin: 5%;
+}
+
+.bi-github:hover {
+  color: rgb(0, 0, 0);
+}
+
+.bi-linkedin:hover {
+  color: rgb(22,102,194);
+}
+
+.bi-envelope:hover {
+  color: rgb(169, 169, 169);
+}
+
+.bi-instagram:hover {
+  color: rgb(229,59,107);
+}
+
+.bi-reddit:hover {
+  color: rgb(230,64,49);
+}
+
+.bi-stack-overflow:hover {
+  color: rgb(233,124,56);
+}
+/* align the inner contents using float */
+#Home {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;   
+  left: 20%;
+  width: 80%;
+  height: 100vh;
+  font-size: 2em;
+}
+
+#backDeco1 {
+  background-color: rgb(217,227,222);
+  width: 90%;
+  height: 90%;
+}
+
+#flipCard1 {
+  background-color: rgb(255,255,255);
+  position: absolute;
+  width: 20%;
+  height: 17%;
+  left: 18%;
+  top: 10%;
+  animation: swap1 6s infinite ease-in-out;
+}
+
+#flipCard2 {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  width: 20%;
+  height: 17%;
+  left: 18%;
+  top: 10%;
+  animation: swap2 6s infinite ease-in-out;
+}
+
+#Home #photo1 {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  background-color: grey;
+  top: 10%;
+  right: 25%;
+  z-index: 1;
+}
+
+#Home #photo2 {
+  position: absolute;
+  width: 20%;
+  height: 25%;
+  background-color: brown;
+  top: 40%;
+  right: 15%;
+  z-index: 2;
+}
+
+#Home #photo3 {
+  position: absolute;
+  width: 57%;
+  height: 50%;
+  background-color: lightblue;
+  z-index: 0;
+  right: 30%;
+  top: 40%;
+}
+
+#Intro {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center; 
+  left: 20%;
+  width: 80%;
+  height: 100vh;
+  font-size: 2em;
+}
+
+#Intro #photo1 {
+  position: absolute;
+  width: 23%;
+  height: 35%;
+  top: 11%;
+  left: 14%;
+  z-index: 2;
+  background: url("/images/systems.jpg") scroll no-repeat center;
+  background-size: contain;
+}
+
+#Intro #photo2 {
+  position: absolute;
+  width: 15%;
+  height: 25%;
+  top: 45%;
+  left: 6%;
+  z-index: 1;
+  background: url("/images/physics.jpg") scroll no-repeat center;
+  background-size: contain;
+}
+
+#Intro #photo3 {
+  position: absolute;
+  width: 30%;
+  height: 48%;
+  z-index: 0;
+  left: 17%;
+  top: 43%;
+  background: url("/images/AI.jpg") scroll no-repeat center;
+  background-size: contain;
+}
+
+#Intro #Description {
+  position: absolute;
+  background-color: white;
+  width: 35%;
+  height: 80%;
+  right: 10%;
+  top: 10%;
+}
+
+#backDeco2 {
+  background-color: rgb(255, 228, 232);
+  width: 90%;
+  height: 90%;
+}
+
+#Research {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns:repeat(3, 30%);
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "Res0 Res0 Res0"
+  "Res1 Res1 Res2"
+  "Res3 Res4 Res4"
+  "Res5 Res5 Res6";
+  position: relative;
+  left: 20%;
+  width: 80%;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+}
+
+.Res {
+  background-color: transparent;
+  text-align: left;
+  height: 100%;
+}
+
+.resIntro {
+  position: absolute;
+  grid-area: Res0;
+  margin-top: 2%;
+  top: 0%;
+  text-align: center;
+  width: 100%;
+  line-height: 100%;
+}
+
+.Res1 {
+  grid-area:Res1;
+}
+
+
+.Res2 {
+  grid-area:Res2;
+}
+
+#respic1 {
+  background: url("/images/drone.jpg") scroll no-repeat center; 
+  background-size: contain;
+  margin-right: 15%;
+  width: 92%;
+  height: 80%;
+}
+
+.Res3 {
+  grid-area:Res3;
+  background-size: 89% 85%;
+}
+
+.Res4 {
+  grid-area:Res4;
+}
+
+.Res5 {
+  grid-area:Res5;
+}
+
+.Res6 {
+  grid-area:Res6;
+  background-size: 89% 85%;
+}
+
+#Project {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns:repeat(3, 30%);
+  grid-template-rows: 0.2fr 0.6fr 1fr;
+  grid-gap: 2rem;
+  grid-template-areas: 
+  "Pro0 Pro0 Pro0"
+  "Pro1 Pro3 Pro5"
+  "Pro2 Pro4 Pro6";
+  position: relative;
+  left: 20%;
+  right: 0%;
+  width: 80%;
+  height: 100vh;
+  font-size: 1.3rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.Pro {
+  background-color: transparent;
+  text-align: left;
+  height: 95%;
+}
+
+.proIntro {
+  grid-area: Pro0;
+  position: absolute;
+  margin-top: 2%;
+  text-align: center;
+  width: 100%;
+  line-height: 100%;
+  top: 0%;
+}
+
+.Pro1 {
+  grid-area:Pro1;
+}
+
+#propic1 {
+  background: url("/images/website.jpg") scroll no-repeat center;
+  background-size: contain;
+  width: 80%;
+  height: 80%;
+}
+
+.Pro2 {
+  grid-area:Pro2;
+}
+
+.Pro3 {
+  grid-area:Pro3;
+  background-size: 100% 100%;
+}
+
+.Pro4 {
+  grid-area:Pro4;
+}
+
+.Pro5 {
+  grid-area:Pro5;
+  background-size: 100% 100%;
+}
+
+.Pro6 {
+  grid-area:Pro6;
+}
+
+#Education {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 0.33fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas: 
+  "Edu0 Edu0"
+  "Edu1 Edu2"
+  "Edu3 Edu4"
+  "Edu5 Edu6";
+  position: relative;
+  left: 20%;
+  right: 0%;
+  width: 80%;
+  height: 100vh;
+  font-size: 1.3rem;
+}
+
+.Edu {
+  background-color: transparent;
+  text-align: left;
+  height: 95%;
+}
+
+.eduIntro {
+  grid-area: Edu0;
+  position: absolute;
+  margin-top: 2%;
+  text-align: center;
+  width: 100%;
+  line-height: 100%;
+  top: 0%;
+}
+
+.Edu1 {
+  grid-area:Edu1;
+  margin-left: 10%;
+  background-size: 80% 80%;
+  margin-top: 10%;
+}
+
+.Edu2 {
+  grid-area:Edu2;
+}
+
+.Edu3 {
+  grid-area:Edu3;
+  margin-left: 10%;
+  background: url("/images/UofT.jpg") scroll no-repeat center;
+  background-size: 80% 90%;
+}
+
+.Edu4 {
+  grid-area:Edu4;
+}
+
+.Edu5 {
+  grid-area:Edu5;
+  margin-left: 10%;
+  background: url("/images/TS.jpg") scroll no-repeat center;
+  background-size: 70% 70%;
+  margin-bottom: 10%;
+}
+
+.Edu6 {
+  grid-area:Edu6;
+}
+
+/* align inner contents using css grid */
+#Hobby ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+  width:100%;
+  height: 100%;
+  display:block;
+}
+
+#Hobby {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.15fr 1fr 1fr;
+  grid-gap: 2rem;
+  grid-template-areas: 
+  "Hob0 Hob0 "
+  "Hob1 Hob2"
+  "Hob3 Hob4";
+  position: relative;
+  left: 20%;
+  right: 0%;
+  width: 80%;
+  height: 100vh;
+  font-size: 2em;
+  background-color: rgb(255, 255, 255);
+}
+
+.Hob {
+  background-color: transparent;
+  text-align: left;
+  height: 95%;
+}
+
+.hobIntro {
+  grid-area: Hob0;
+  position: absolute;
+  margin-top: 2%;
+  text-align: center;
+  width: 100%;
+  line-height: 100%;
+  top: 0%;
+}
+
+.Hob1 {
+  grid-area:Hob1;
+  z-index: 0;
+}
+
+.Hob2 {
+  grid-area:Hob2;
+  z-index: 0;
+}
+
+.Hob3 {
+  grid-area:Hob3;
+  z-index: 0;
+}
+
+.Hob4 {
+  grid-area:Hob4;
+  z-index: 0;
+}
+
+.hobIntro a {
+  align-items: center;
+  justify-content: center;
+}
+
+#Hobby img {
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+#Hobby a, img {
+  border-radius: 8%;
+}
+
+#Hobby a:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.6s;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+#guide ul li {
+  position: relative;
+  margin: 10% 0 10% 14%;
+  padding: 4%;
+  width: 55%;
+  height: auto;
+  line-height: 100%;
+  background-color: rgb(255, 255, 255); 
+  text-align: left;
+}
+
+#guide a:link, a:visited {
+  z-index: 1;
+  font-size: 0.73em;
+  line-height: 100%;
+  font-weight: bold;
+  color:rgb(140, 140, 140);
+  text-decoration: none;
+  text-align: center;
+  width:100%;
+  height: 100%;
+  text-transform:uppercase;
+}
+
+#guide a:hover {
+  font-size: 0.73em;
+  line-height: 100%;
+  font-weight: bold;
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: left;
+}
+
+#News {
+  background-color: rgb(217,227,222);
+  position: relative;
+  left: 20%;
+  right: 0%;
+  width: 80%;
+  height: 10vh;
+}
+
+@keyframes swap1 {
+  from { transform: perspective(400px) rotateY(0deg);}
+  50% { transform: perspective(400px) rotateY(180deg);
+        opacity: 0;}
+  to { transform: perspective(400px) rotateY(0deg);
+    opacity: 1;}
+}
+
+@keyframes swap2 {
+  from { transform: perspective(400px) rotateY(-180deg);
+  opacity: 0;}
+  50% { transform: perspective(400px) rotateY(0deg);
+        opacity: 1;}
+  to { transform: perspective(400px) rotateY(-180deg);
+    opacity: 0;}
+}
+
+footer button a {
+  text-decoration: none; 
+  text-align: center; 
+  line-height: 100%; 
+  font-weight: bold;  
+  font-size: 1.2rem; 
+  color: rgb(50, 50, 50); 
+  font-weight: 500; 
+  font-family: 'Lato', sans-serif;
+}
+
+footer button {
+  border-radius: 10%;
+  border:rgb(140, 140, 140);
+}
+
+footer button:hover {
+  transform: scale(1.1,1.1);
+  transition: 1s;
+}
