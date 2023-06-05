@@ -186,7 +186,7 @@ body {
   top: 11%;
   left: 14%;
   z-index: 2;
-  background: url("/images/systems.jpg") scroll no-repeat center;
+  background: url("../images/systems.jpg") scroll no-repeat center;
   background-size: contain;
 }
 
@@ -197,7 +197,7 @@ body {
   top: 45%;
   left: 6%;
   z-index: 1;
-  background: url("/images/physics.jpg") scroll no-repeat center;
+  background: url("../images/physics.jpg") scroll no-repeat center;
   background-size: contain;
 }
 
@@ -208,7 +208,7 @@ body {
   z-index: 0;
   left: 17%;
   top: 43%;
-  background: url("/images/AI.jpg") scroll no-repeat center;
+  background: url("../images/AI.jpg") scroll no-repeat center;
   background-size: contain;
 }
 
@@ -271,7 +271,7 @@ body {
 }
 
 #respic1 {
-  background: url("/images/drone.jpg") scroll no-repeat center; 
+  background: url("../images/drone.jpg") scroll no-repeat center; 
   background-size: contain;
   margin-right: 15%;
   width: 92%;
@@ -337,7 +337,7 @@ body {
 }
 
 #propic1 {
-  background: url("/images/website.jpg") scroll no-repeat center;
+  background: url("../images/website.jpg") scroll no-repeat center;
   background-size: contain;
   width: 80%;
   height: 80%;
@@ -415,7 +415,7 @@ body {
 .Edu3 {
   grid-area:Edu3;
   margin-left: 10%;
-  background: url("/images/UofT.jpg") scroll no-repeat center;
+  background: url("../images/UofT.jpg") scroll no-repeat center;
   background-size: 80% 90%;
 }
 
@@ -426,7 +426,7 @@ body {
 .Edu5 {
   grid-area:Edu5;
   margin-left: 10%;
-  background: url("/images/TS.jpg") scroll no-repeat center;
+  background: url("../images/TS.jpg") scroll no-repeat center;
   background-size: 70% 70%;
   margin-bottom: 10%;
 }
